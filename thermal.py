@@ -31,9 +31,9 @@ class Graph:
     self.print_mst(parent)
 n=int(input("Enter the number of thermal powerstations:"))
 g=Graph(n)
-print("enter th cost of electrification for each connections :")
+print("enter the cost of electrification for each connections :")
 for i in range(n):
   for j in range(i+1,n):
     cost=int(input(f"enter the cost between thermal station {i} and {j}:"))
-    g.add_edge(i,j,cost)
+    g.add_edge(i,j,cost) 
 g.prim_mst()
